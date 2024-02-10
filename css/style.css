@@ -19,6 +19,13 @@ h3 {
     padding: 20px;
 }
 
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(5, 5, 156);
+    padding: 20px;
+}
+
 p {
     line-height: 20px;
     padding: 10px;
@@ -33,9 +40,16 @@ img, video {
     width: 75%;
 }
 
-ul, ol {
+ul {
     margin-left: 50px;
     display: inline-block;
+    list-style-type: disc;
+}
+
+ol {
+    margin-left: 50px;
+    display: inline-block;
+    list-style-type: decimal;
 }
 
 .current {
