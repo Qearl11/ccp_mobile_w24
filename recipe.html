@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Recipe</title>
 </head>
 <body>
-    <a href = "index.html">Skip to Main Content</a>
+    <!-- <a href = "index.html">Skip to Main Content</a> -->
+    <a href="#main-content" id="skip-main" tabindex="1">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pets.html">Pets</a></li>
-                <li><a href="recipe.html">Recipes</a></li>
+                <li class="current"><a href="recipe.html">Recipes</a></li>
                 <li><a href="travel.html">Travel</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <h1>Recipe</h1>
         <h2>1.Double Chocolate Cookies</h2>
         <h3>2.Origin: Michigan</h3>
