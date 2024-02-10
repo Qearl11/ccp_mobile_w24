@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <a href = "index.html">Skip to Main Content</a>
+    <!-- <a href = "index.html">Skip to Main Content</a> -->
+    <a href="#main-content" id="skip-main" tabindex="1">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <li><a href ="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="pets.html">Pets</a></li>
                 <li><a href="recipe.html">Recipes</a></li>
-                <li><a href="travel.html">Travel</a></li>
+                <li class="current"><a href="travel.html">Travel</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <h1>Travel</h1>
         <div>
             <h2>Yellowstone National Park</h2>
@@ -33,28 +35,19 @@
             <p>Organized exploration of the land did not begin until the 1860s. It is important to note Native populations have lived on the land for over 11,000 years, way before it was designated as a national park.</p>
 
             <h3>Photo Gallery</h3>
-
-            <p>yellowstone_sunset.jpg</p>
-            <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with a bare tree in the foreground">
-            <p>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</p>
-            <p>yellowstone_sulphur_springs.JPG</p>
-            <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="Yellow sulphur springs">
-            <p>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</p>
-            <p>yellowstone_travertine.JPG</p>
-            <img src="images/yellowstone_travertine.JPG" width = "200" alt="Large rock face with streaks of mud">
-            <p>Mammoth Hot Springs has a number of actively forming Travertine terraces.</p>
-            <p>yellowstone_buffalo.MOV</p>
-            <video width="200"  controls>
-                <source src="images/yellowstone_buffalo.MOV">
-                Yellowstone Buffalo
-            </video>
-            <p>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</p>
-            <p>yellowstone_prism.MOV</p>
-            <video width="200"  controls>
-                <source src="images/yellowstone_prism.MOV">
-                Yellowstone Prism
-            </video>
-            <p>The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</p>
+            <div class="photo-gallery">
+                <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with a bare tree in the foreground">
+                <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="Yellow sulphur springs">
+                <p>The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</p>
+                <p>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</p>
+                <img src="images/yellowstone_travertine.JPG" width = "200" alt="Large rock face with streaks of mud">
+                <video width="200"  controls>
+                    <source src="images/yellowstone_buffalo.MOV">
+                    Yellowstone Buffalo
+                </video>
+                <p>Mammoth Hot Springs has a number of actively forming Travertine terraces.</p>
+                <p>The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</p>
+            </div>
             <p>Colleen van Lent</p>
         </div>
 
@@ -70,22 +63,16 @@
             <p>Its picturesque and strategic location has earned it the nickname "City of a Hundred Spires," with a skyline dominated by historic castles, bridges, and Gothic and Baroque architecture.</p>
 
             <h3>Photo Gallery</h3>
-
-            <p>astronomical_clock.JPG</p>
-            <img src="images/astronomical_clock.JPG" width = "200" alt="Astronomical Clock">
-            <p>Installed in the Old Town Square, the Astronomical Clock is a medieval marvel that dates back to the 15th century. </p>
-            <p>prague_street.jpg</p>
-            <img src="images/prague_street.jpg" width = "200" alt="The street of Prague">
-            <p>The heart of Prague's historic district, the Old Town Square is surrounded by colorful Baroque buildings</p>
-            <p>prague_river.jpg</p>
-            <img src="images/prague_river.jpg" width = "200" alt="Vltava River of Prague">
-            <p>The Vltava is the longest river in the Czech Republic, and it plays a significant role in shaping the landscape of Prague. </p>
-            <p>charles_bridge.jpg</p>
-            <img src="images/charles_bridge.jpg" width = "200" alt="Charles Bridge">
-            <p>This iconic bridge, adorned with statues of saints, spans the Vltava River and connects the Old Town with Prague Castle. It offers breathtaking views of the city and is a popular spot for artists, musicians, and tourists.</p>
-            <p>prague_buildings.jpg</p>
-            <img src="images/prague_buildings.jpg" width = "200" alt="The buildings of Prague.">
-            <p>Some colorful buildings around the river.</p>
+            <div class="photo-gallery">
+                <img src="images/astronomical_clock.JPG" width = "200" alt="Astronomical Clock">
+                <img src="images/prague_street.jpg" width = "200" alt="The street of Prague">
+                <p>Installed in the Old Town Square, the Astronomical Clock is a medieval marvel that dates back to the 15th century. </p>
+                <p>The heart of Prague's historic district, the Old Town Square is surrounded by colorful Baroque buildings</p>
+                <img src="images/prague_river.jpg" width = "200" alt="Vltava River of Prague">
+                <img src="images/charles_bridge.jpg" width = "200" alt="Charles Bridge">
+                <p>The Vltava is the longest river in the Czech Republic, and it plays a significant role in shaping the landscape of Prague. </p>
+                <p>This iconic bridge, adorned with statues of saints, spans the Vltava River and connects the Old Town with Prague Castle. It offers breathtaking views of the city and is a popular spot for artists, musicians, and tourists.</p>
+            </div>
             <p>Xuechun Wang</p>
         </div>
 
@@ -101,24 +88,19 @@
             <p>Renowned for its Mediterranean climate, the city sprawls across a diverse landscape, encompassing coastal areas, mountain ranges such as the Santa Monica Mountains, and iconic neighborhoods like Hollywood and Beverly Hills.</p>
 
             <h3>Photo Gallery</h3>
-
-            <p>downtown.jpeg</p>
-            <img src="images/downtown.jpeg" width = "200" alt="the downtown of Los Angeles">
-            <p>a vibrant and dynamic urban center, is characterized by its iconic skyline, cultural institutions like the Walt Disney Concert Hall and The Broad Museum, and a mix of historic and modern architecture.</p>
-            <p>hollywood.jpeg</p>
-            <img src="images/hollywood.jpeg" width = "200" alt="Hollywood sign">
-            <p>a world-renowned district in Los Angeles, is synonymous with the global entertainment industry, hosting the historic Hollywood Walk of Fame, iconic landmarks like the Hollywood Sign, and serving as the hub for the American film and television business.</p>
-            <p>universal.jpeg</p>
-            <img src="images/universal.jpeg" width = "200" alt="Universal Studio in Los Angeles">
-            <p>a premier film and entertainment studio, doubles as a thrilling theme park where visitors can experience immersive movie-themed attractions, iconic studio tours, and live shows, making it a must-visit destination for movie enthusiasts and families alike.</p>
-            <p>sunset.jpeg</p>
-            <img src="images/sunset.jpeg" width = "200" alt="The sunset view of Los Angeles">
-            <p>The sunset in Los Angeles paints a mesmerizing panorama over the Pacific Ocean, casting a warm glow that silhouettes the iconic palm trees and cityscape, creating a breathtaking and quintessentially Californian evening scene.</p>
-            <p>santa_monica.jpeg</p>
-            <img src="images/santa_monica.jpeg" width = "200" alt="Santa Monica">
-            <p>a coastal gem of Los Angeles, is renowned for its picturesque beaches, vibrant pier with an iconic Ferris wheel, upscale shopping along the Third Street Promenade, and a relaxed, sun-soaked atmosphere that captures the essence of Southern California living.</p>
+            <div class="photo-gallery">
+                <img src="images/downtown.jpeg" width = "200" alt="the downtown of Los Angeles">
+                <img src="images/hollywood.jpeg" width = "200" alt="Hollywood sign">
+                <p>a vibrant and dynamic urban center, is characterized by its iconic skyline, cultural institutions like the Walt Disney Concert Hall and The Broad Museum, and a mix of historic and modern architecture.</p>
+                <p>a world-renowned district in Los Angeles, is synonymous with the global entertainment industry, hosting the historic Hollywood Walk of Fame, iconic landmarks like the Hollywood Sign, and serving as the hub for the American film and television business.</p>
+                <img src="images/universal.jpeg" width = "200" alt="Universal Studio in Los Angeles">
+                <img src="images/sunset.jpeg" width = "200" alt="The sunset view of Los Angeles">
+                <p>a premier film and entertainment studio, doubles as a thrilling theme park where visitors can experience immersive movie-themed attractions, iconic studio tours, and live shows, making it a must-visit destination for movie enthusiasts and families alike.</p>
+                <p>The sunset in Los Angeles paints a mesmerizing panorama over the Pacific Ocean, casting a warm glow that silhouettes the iconic palm trees and cityscape, creating a breathtaking and quintessentially Californian evening scene.</p>
+            </div>
             <p>Xuechun Wang</p>
         </div>
     </main>
 </body>
 </html>
+
